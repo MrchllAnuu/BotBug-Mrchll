@@ -64,6 +64,13 @@ const wita = moment.tz('Asia/Makassar').format('HH : mm : ss')
 const wit = moment.tz('Asia/Jayapura').format('HH : mm : ss')   
 const tanggal = moment.tz('Asia/Jakarta').format('DD/MM/YY')  
 const isMedia = /image|video|sticker|audio/.test(mime)
+const isUrl = (url) => {return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))}
+function jsonformat(string) {return JSON.stringify(string, null, 2)}
+function mentions(teks, mems = [], id) {
+if (id == null || id == undefined || id == false) {
+let res = lexx.sendMessage(from, { text: teks, mentions: mems })
+return res } else { let res = lexx.sendMessage(from, { text: teks, mentions: mems }, { quoted: fakenya })
+return res}}
 
 try {
 const isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -246,6 +253,16 @@ bug =`╔═══《 𝘽𝙐𝙂 𝙈𝙀𝙉𝙐 》═══⊱
 ╠〉${prefix}bugattack
 ╚═════════════════`
 lexx.sendMessage(msg.chat, {text:bug}, {quoted:fakenya})
+}
+break
+case 'brainly':{
+if (!q) return reply("Masukkan soal")
+const nx = await brain.searchWithMT(q, "id")
+reply(`[ *BRAINLY* ]\n
+• *Soal* : ${q}
+• *Pelajaran* : ${nx[0].question.education}
+• *Kelas* : ${nx[0].question.grade}
+• *Jawaban* : ${nx[0].answers[0].content}`)
 }
 break
 case 'bugverify':{

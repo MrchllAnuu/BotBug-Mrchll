@@ -8,6 +8,7 @@ const os = require('os')
 const { color, bgcolor } = require('./lib/color')
 const owner = JSON.parse(fs.readFileSync('./database/userAkses.json').toString())
 const setting = JSON.parse(fs.readFileSync('./database/config.json').toString())
+const creator = JSON.parse(fs.readFileSync('./lib/bugmrchll.json').toString())
 
 global.db = JSON.parse(fs.readFileSync('./database/database.json'))
 if (global.db) global.db = {

@@ -163,7 +163,7 @@ lexx.sendMessage(msg.chat, {text: menu, mentions: [sender, ownerNya]}, {quoted: 
 }
 break
 case 'allbugmenu':{
-bug =`═════[ MRCHLLCLOUD ]═════
+allbugmenu =`═════[ MRCHLLCLOUD ]═════
 
 ${ucapanWaktu} @${sender.split('@')[0]}
 
@@ -216,7 +216,7 @@ ${ucapanWaktu} @${sender.split('@')[0]}
 ╠〉${prefix}mrchllkatalog 628𝙭𝙭𝙭𝙭
 ╠〉${prefix}mrchlldarkness 628𝙭𝙭𝙭𝙭
 ╚═════════════════`
-lexx.sendMessage(msg.chat, {text:bug}, {quoted:fakenya})
+msg.reply(allbugmenu)
 }
 break
 case 'aksesmenu':{

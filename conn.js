@@ -164,16 +164,6 @@ lexx.sendMessage(msg.chat, {text: menu, mentions: [sender, ownerNya]}, {quoted: 
 break
 case 'allbugmenu':{
 allbugmenu =`═════[ MRCHLLCLOUD ]═════
-
-${ucapanWaktu} @${sender.split('@')[0]}
-
-╔═══《 𝑩𝑶𝑻 𝑰𝑵𝑭𝑶 》════
-╠❏ ᴄʀᴇᴀᴛᴏʀ : @${ownerNya.split('@')[0]}
-╠❏ ʙᴏᴛ ɴᴀᴍᴇ : ${setting.botName}
-╠❏ ᴏᴡɴᴇʀ ɴᴀᴍᴇ : ${setting.ownerName}
-╠❏ ʀᴜɴɴɪɴɢ : ᴘᴀɴᴇʟ ᴏɴʟʏ
-╠❏ ᴘʀᴇғɪx : ( ᴍᴜʟᴛɪ ᴘʀᴇғɪx )
-╚════════════════
 ╔══》𝕍𝔼ℝ𝕀𝔽𝕐 ℕ𝕌𝕄𝔹𝔼ℝ
 ╠〉${prefix}mrchlllogout 628𝙭𝙭𝙭𝙭
 ╠〉${prefix}mrchllresetotp 628𝙭𝙭𝙭𝙭

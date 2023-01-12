@@ -123,7 +123,7 @@ if (command) {
 lexx.readMessages([msg.key])
 }
 
-let fakenya = {key : {participant : '0@s.whatsapp.net', ...(msg.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `LexBotzz...🌷`, jpegThumbnail: fs.readFileSync('./lib/logo.jpg')}}}
+let fakenya = {key : {participant : '0@s.whatsapp.net', ...(msg.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `© MRCHLL`, jpegThumbnail: fs.readFileSync('./lib/logo.jpg')}}}
 
 switch (command) {
 case 'menu':{
